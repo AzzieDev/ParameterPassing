@@ -25,8 +25,8 @@ void g(int *p, int *q){
   m = n * 10; 
   
   //copy back the data
-  *p = m; //z[0] = 10 = m --> 30
-  *q = n; //z[0] = 30 = n --> 3
+  *p = m; //z[0] = 10 --> m = 30
+  *q = n; //z[0] = 30 --> n = 3
 }
 
 //call by reference
@@ -46,8 +46,8 @@ void k (int m, int n) {
   m = n * 10;
 
   //simulated sequence
-  z[w] = m; //"z[w]" = z[1] = 20 --> 30
-  z[0] = n; //"z[0]" = z[0] = 10 --> 3
+  z[w] = m; //"z[w]" = z[1] = 20 --> m = 30
+  z[0] = n; //"z[0]" = z[0] = 10 --> n = 3
 }
 
 int main () {
